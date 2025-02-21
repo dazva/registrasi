@@ -5,14 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginbkg"
+    android:background="@drawable/signupbkg"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    tools:context=".SignupActivity">
 
     <EditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/loginUsername"
+        android:id="@+id/signupUsername"
         android:hint="Username"
         android:padding="12dp"
         android:background="@drawable/edittext_border"
@@ -23,20 +23,20 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/loginPassword"/>
+        app:layout_constraintBottom_toTopOf="@+id/signupPassword"/>
 
     <EditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/loginPassword"
+        android:id="@+id/signupPassword"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="12dp"
         android:background="@drawable/edittext_border"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginUsername"
-        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@id/signupUsername"
+        app:layout_constraintBottom_toTopOf="@+id/signupButton"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"/>
@@ -44,21 +44,21 @@
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/loginButton"
-        android:text="LOGIN"
+        android:id="@+id/signupButton"
+        android:text="SIGNUP"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/signupRedirect"
+        app:layout_constraintBottom_toTopOf="@+id/loginRedirect"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginPassword"/>
+        app:layout_constraintTop_toBottomOf="@id/signupPassword"/>
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/signupRedirect"
-        android:text="Not yet registered? Signup"
+        android:id="@+id/loginRedirect"
+        android:text="Already registered? Login"
         android:textSize="18sp"
         android:gravity="center"
         android:textColor="@color/green"
@@ -66,6 +66,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginButton"/>
+        app:layout_constraintTop_toBottomOf="@id/signupButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
